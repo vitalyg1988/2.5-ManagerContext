@@ -23,6 +23,6 @@ if __name__ == '__main__':
         for line in file:
             student = line.strip()
             ratings = file.readline().strip()
-            print(f'Оценки студента {student} следующие: {ratings}')
             int_ratings = [int(rate) for rate in ratings.split()]
+            print(f'Оценки студента {student} следующие: {ratings}')
             print(f'Средний балл {student} по успеваемости равен {(sum(int_ratings)/len(int_ratings)).__round__(2)}')
